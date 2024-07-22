@@ -1556,7 +1556,7 @@ dags:
 
     ## the git branch to check out
     ##
-    branch: master
+    branch: main
 
     ## the git revision (tag or hash) to check out
     ##
