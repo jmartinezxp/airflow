@@ -8,7 +8,7 @@ from airflow.models.dag import DAG
 # Operators; we need this to operate!
 from airflow.operators.bash import BashOperator
 with DAG(
-    "tutorial",
+    "tutorial v2",
     # These args will get passed on to each operator
     # You can override them on a per-task basis during operator initialization
     default_args={
@@ -32,11 +32,11 @@ with DAG(
         # 'on_skipped_callback': another_function, #or list of functions
         # 'trigger_rule': 'all_success'
     },
-    description="A simple tutorial DAG jose 1",
+    description="A simple tutorial DAG jose v2",
     schedule=timedelta(days=1),
     start_date=datetime(2024, 7, 22),
     catchup=False,
-    tags=["example"],
+    tags=["examplev2"],
 ) as dag:
 
     # t1, t2 and t3 are examples of tasks created by instantiating operators
@@ -66,6 +66,9 @@ with DAG(
     dag.doc_md = """
     This is a documentation placed anywhere
     """  # otherwise, type it like this
+
+
+    
     templated_command = textwrap.dedent(
         """
     {% for i in range(5) %}
