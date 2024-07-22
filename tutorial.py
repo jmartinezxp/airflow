@@ -32,7 +32,7 @@ with DAG(
         # 'on_skipped_callback': another_function, #or list of functions
         # 'trigger_rule': 'all_success'
     },
-    description="A simple tutorial DAG",
+    description="A simple tutorial DAG luis 2",
     schedule=timedelta(days=1),
     start_date=datetime(2024, 7, 22),
     catchup=False,
