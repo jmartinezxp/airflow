@@ -2154,7 +2154,7 @@ externalDatabase:
 
   ## the host of the external database
   ##
-  host: localhost
+  host: airflow-postgres.cdqqotwcw28t.us-east-1.rds.amazonaws.com
 
   ## the port of the external database
   ##
@@ -2162,11 +2162,11 @@ externalDatabase:
 
   ## the database/scheme to use within the external database
   ##
-  database: airflow
+  database: airflow_db
 
   ## the username for the external database
   ##
-  user: airflow
+  user: airflow_admin
 
   ## the name of a pre-created secret containing the external database user
   ## - if set, this overrides `externalDatabase.user`
@@ -2181,7 +2181,7 @@ externalDatabase:
   ## - [WARNING] to avoid storing the password in plain-text within your values,
   ##   create a Kubernetes secret and use `externalDatabase.passwordSecret`
   ##
-  password: ""
+  password: "uca03KLUBmlDEWwgn3go"
 
   ## the name of a pre-created secret containing the external database password
   ## - if set, this overrides `externalDatabase.password`
